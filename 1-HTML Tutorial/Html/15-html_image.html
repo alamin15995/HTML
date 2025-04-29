@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Image</title>
+
+    <style>
+        body {
+          background-image: url('/images/bg.jpg');
+          background-size: cover; 
+          /* background-size: 100% 100%; */
+          background-repeat: no-repeat; 
+        }
+      </style>
+      
+</head>
+
+<body>
+
+    <h2>HTML Image</h2>
+    <img src="/images/img1.jpeg" alt="img1.jpg" width="300px" height="300px">
+    <img src="/images/img2.jpeg" alt="img2.jpg" width="300px" height="300px">
+    <img src="/images/img3.jpeg" alt="img3.jpg" width="300px" height="300px">
+
+    <h2>HTML Image</h2>
+    <img src="/images/img1.jpeg" alt="img1.jpg" width="300px" height="300px">
+    <img src="/images/img2.jpeg" alt="img2.jpg" width="300px" height="300px">
+    <img src="/images/img3.jpeg" alt="img3.jpg" width="300px" height="300px">
+
+
+    <!--  bac hround image  -->
+      <p style="background-image: url(/images/img1.jpeg); width: 900px; height: 500px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Inventore repellendus dolores <br> cupiditate! Optio, incidunt velit.  <br>Quo hic nihil soluta eum impedit. Provident, ullam harum? Hic deleniti <br> culpa saepe nemo? Sit similique sunt omnis numquam doloremque voluptate eaque, aut suscipit deserunt quidem! Voluptatibus nisi <br> ab tenetur maxime repudiandae temporibus quia rerum! Lorem ipsum dolor sit amet, <br> consectetur adipisicin <br>g elit. Iste, similique! <br> Libero, pariatur! Suscipit quasi quis beatae vero vel. Enim <br> vero aliquid consequatur sit dolorum vel <br> earum error adipisci. Perspiciatis obcaecati dignissimos ipsam, <br> itaque ea dicta dolores nostrum iste sequi <br> voluptatum perferendis mollitia reiciendis cumque cum <br> nesciunt debitis dolorum! Laboriosam, distinctio.</p>
+
+
+      <h2>The picture Element</h2>
+      <picture>
+        <source media="(min-width: 1120px)" srcset="/images/img1.jpeg">
+        <source media="(min-width: 650px)" srcset="/images/img2.jpeg">
+        <source media="(min-width: 450px)" srcset="/images/img3.jpeg">
+        <source media="(min-width: 350px)" srcset="/images/img1.jpeg">
+        <img src="/images/scream.jpg" alt="Fallback Image" style="width:auto;">
+      </picture>
+
+</body>
+
+</html>
