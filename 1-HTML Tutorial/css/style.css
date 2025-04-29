@@ -1,0 +1,10 @@
+/* External CSS for reusable and consistent styling */
+h1{
+    color: rgb(16, 16, 212);
+    background-color: rgb(53, 205, 56);
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid red;
+    text-align: left;
+    font-family: "Arial", sans-serif;
+}

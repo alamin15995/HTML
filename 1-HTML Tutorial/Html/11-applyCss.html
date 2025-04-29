@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Comparison: Inline, Internal, External</title>
+
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            color: navy;
+            background-color: rgb(230, 225, 173);
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid green;
+            text-align: left;
+            font-family: "Arial", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- inline css  -->
+    <h1 style="color: red; font-size: 24px; border: 2px solid black; padding: 10px; margin: 10px; background-color: rgb(52, 183, 183);">Inline CSS: Quick Styling Example</h1>
+
+    <h1>Internal CSS: Centralized Styling for This Page</h1>
+
+    <h1>Internal CSS provides centralized styles for elements within the same HTML file. It’s ideal for single-page designs.</h1>
+
+    <h1>External CSS allows reuse across multiple pages, ensuring consistent design and scalability.</h1>
+</body>
+
+</html>
