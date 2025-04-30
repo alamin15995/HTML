@@ -8,9 +8,10 @@
 
     <style>
         table {
+            width: 100%;
             border: 2px solid red;
             border-spacing: 10px 10px; 
-            /* border-collapse: collapse; */
+            border-collapse: collapse;
         }
 
         td, th {
@@ -29,16 +30,70 @@
         tr {
             background-color: rgb(44, 91, 44);
         }
+        tr:nth-child(odd){
+            background-color: antiquewhite;
+        }
     </style>
 </head>
 
 <body>
     <table>
         <tr>
-            <th>Person Name</th>
-            <th>Email</th>
+            <th >Person Name</th>
+            <th >Email</th>
+            <th>Contact</th>
+      
+        </tr>
+
+        <tr>
+            <td>Mohammad AL-Amin</td>
+            <td>alamin19ewu@gmail.com</td>
+            <td>Dhaka, Bangladesh</td>
+        </tr>
+
+        <tr>
+            <td >Mohammad AL-Amin</td>
+            <td>alamin19ewu@gmail.com</td>
+            <td>Dhaka, Bangladesh</td>
+        </tr>
+
+        <tr>
+            <td>Mohammad AL-Amin</td>
+            <td>alamin19ewu@gmail.com</td>
+            <td>Dhaka, Bangladesh</td>
+        </tr>
+        <tr>
+            <td>Mohammad AL-Amin</td>
+            <td>alamin19ewu@gmail.com</td>
+            <td>Dhaka, Bangladesh</td>
+        </tr>
+        <tr>
+            <td>Mohammad AL-Amin</td>
+            <td>alamin19ewu@gmail.com</td>
+            <td>Dhaka, Bangladesh</td>
+        </tr>
+        
+    </table><br><br>
+
+
+    <table>
+        <tr>
+            <th colspan="2">Person Name  & Email</th>
             <th>Contact</th>
         </tr>
+
+        <tr>
+            <td rowspan="2">Mohammad AL-Amin</td>
+            <td>alamin19ewu@gmail.com</td>
+            <td>Dhaka, Bangladesh</td>
+        </tr>
+        
+        <tr>
+            <!-- <td>Mohammad AL-Amin</td> -->
+            <td>alamin19ewu@gmail.com</td>
+            <td>Dhaka, Bangladesh</td>
+        </tr>
+
         <tr>
             <td>Mohammad AL-Amin</td>
             <td>alamin19ewu@gmail.com</td>
@@ -54,6 +109,7 @@
             <td>alamin19ewu@gmail.com</td>
             <td>Dhaka, Bangladesh</td>
         </tr>
+
     </table>
 </body>
 
