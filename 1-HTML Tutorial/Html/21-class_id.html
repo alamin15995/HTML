@@ -17,22 +17,17 @@
         .main {
             text-align: center;
         }
+
+        #myHeader {
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
-    <!-- The class Attribute
-     Condition: 
-      1. Multiple HTML elements can share the same class.
-      2. class attribute can be used on any HTML element.
-      3. The class name is case sensitive!
-      4. HTML elements can belong to more than one class.
-      5. To define multiple classes, separate the class names with a space, e.g. <div class="city main">. 
-      6. Different elements can share same class.
-      7. Use of the class attribute in javaScript.
-    -->
-
-
     <div class="city">
         <h2>London</h2>
         <p>London is the capital of England.</p>
@@ -54,6 +49,42 @@
     <h2 class="city">Habiganj</h2>
     <p class="city">Dhaka is the capital of France.</p>
 
+    <h1 id="myHeader">My Cities</h1>
+
+    <!-- HTML Bookmarks with ID and Links: -->
+    <p><a href="#C4">Jump to Chapter 4</a></p>
+    <p><a href="#C10">Jump to Chapter 10</a></p>
+
+    <h2>Chapter 1</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 2</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 3</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C4">Chapter 4</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 5</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 6</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 7</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 8</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 9</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C10">Chapter 10</h2>
+    <p>This chapter explains ba bla bla</p>
+
     <button onclick="myFunction()">Hide elements</button>
     <script>
         function myFunction() {
@@ -64,6 +95,14 @@
         }
     </script>
 
+    <h1 id="myHeader2">Hello World!</h1>
+    <button onclick="displayResult()">Change text</button>
+
+    <script>
+        function displayResult() {
+            document.getElementById("myHeader2").innerHTML = "Have a nice day!";
+        }
+    </script>
 </body>
 
 </html>
