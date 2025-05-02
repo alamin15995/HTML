@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_javascript</title>
+</head>
+
+<body>
+
+    <h2>HTML JavaScript</h2>
+    <p id="demo1"></p>
+    <p id="demo2">Bangladesh Time</p>
+    <p id="demo3">Javascript.</p>
+
+    <script>
+        document.getElementById("demo1").innerHTML = "Hello JavaScript-Teacher";
+        document.getElementById("demo1").style.fontSize = "25px";
+        document.getElementById("demo1").style.color = "white";
+        document.getElementById("demo1").style.backgroundColor = "blue";   
+    </script>
+
+    <button type="button" onclick="document.getElementById('demo2').innerHTML = Date()">Date</button>
+    <script>
+        document.getElementById("demo2").style.fontSize = "25px";
+        document.getElementById("demo2").style.color = "white";
+        document.getElementById("demo2").style.backgroundColor = "green";   
+    </script>
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    <script>
+        function myFunction() {
+            document.getElementById("demo3").innerHTML = "Hello JavaScript-Learner";
+        }
+        document.getElementById("demo3").style.fontSize = "25px";
+        document.getElementById("demo3").style.color = "red";
+        document.getElementById("demo3").style.backgroundColor = "yellow";   
+    </script>
+
+    <!-- noscript tag example -->
+    <noscript>
+        <h2>JavaScript Disabled</h2>
+        <p>It seems that JavaScript is disabled in your browser. Please enable JavaScript to enjoy the full functionality of this page.</p>
+    </noscript>
+
+</body>
+
+</html>
