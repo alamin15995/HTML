@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rersponsive HTML</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        .div_header {
+            background-color: rgb(250, 236, 217);
+            padding: 10px 10px;
+        }
+        .div_header,h1 {
+            font-family:sans-serif;
+
+        }
+        
+        .div_body{
+          overflow: auto;
+        }
+        
+        .div_body .div_body_menu{
+            float: left;
+            width: 20%;
+            background-color: rgb(209, 237, 228);
+        }
+        
+        .div_body .div_dody_description{
+            float: left;
+            width: 65%;
+            background-color: rgb(110, 201, 201);
+        }
+        
+        .div_body .div_dody_explanation{
+            float: left;
+            width: 15%;
+            background-color: rgb(222, 203, 239);
+        }
+
+        .footer{
+            text-align: center;
+            background-color: rgb(227, 227, 224);
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="div_header">
+        <h1>Cinque Terre</h1>
+        <h4>Resize the browser window</h4>
+    </div>
+
+    <div class="div_body" style="overflow:auto">
+
+
+        <div class="div_body_menu">
+            <ul>
+                <li><a href="#">The Walk</a></li>
+                <li><a href="#">Transport</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="div_dody_description">
+            <h1>The Walk</h1>
+            <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour
+                depending on the weather conditions and your physical shape.</p>
+            <img src="/images/hill.jpg" alt="">
+        </div>
+
+        <div class="div_dody_explanation">
+            <h1>What?</h1>
+            <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+            <h1>Where?</h1>
+            <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+            <h1>Price?</h1>
+            <p>The Walk is free!</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser
+            window to see the content respond to the resizing.</p>
+    </div>
+
+</body>
+
+</html>
